@@ -1,0 +1,195 @@
+:root {
+  --bc-black: rgb(39, 39, 39);
+  --bc-white: rgb(190, 190, 190);
+  --text-white: rgb(190, 190, 190);
+  --text-black: rgb(39, 39, 39);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bc-black);
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--bc-black);
+}
+
+.navbar__container {
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar__logo {
+  color: red;
+  text-transform: uppercase;
+  pointer-events: none;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.navbar__list {
+  list-style: none;
+}
+
+.navbar__li {
+  text-align: center;
+  display: inline;
+  padding-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.main__container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.308))), url("../img/capa-house.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308)), url("../img/capa-house.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.25rem 0.625rem;
+}
+
+.main__titulo {
+  color: white;
+  font-size: 3.125rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.main__sinopse {
+  color: var(--text-white);
+  padding-bottom: 1.25rem;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  max-width: 56.25rem;
+}
+
+.main__botoes {
+  max-width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin: 0.625rem;
+  padding: 0.9375rem 0.9375rem;
+  width: 12.5rem;
+  border: none;
+  background-color: var(--bc-black);
+  color: var(--text-white);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 0.3125rem;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.main__botao:hover {
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: white;
+  color: black;
+}
+
+.owl-carousel .owl-stage-outer {
+  margin-top: 0.625rem;
+}
+
+@media (max-width: 30.9375rem) {
+  .navbar__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0.625rem;
+  }
+  .navbar__li {
+    font-size: 0.8125rem;
+  }
+  .main__titulo {
+    font-size: 2.5rem;
+  }
+  .main__sinopse {
+    font-size: 0.975rem;
+  }
+  .main__botoes {
+    width: 100%;
+  }
+  .main__botao {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
